@@ -3,6 +3,10 @@ const createError = require('../utils/appError.js');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
+exports.view = async(req, res ,next)=>{
+    res.json({message:"website is welcoming"})
+};
+
 // REGISTER USER
 exports.signup = async (req , res , next)=>{
     try {
